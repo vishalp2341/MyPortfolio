@@ -31,17 +31,23 @@
     
                 <h1>Connect with me</h1>
     
-                <form action="thank.html">
-                    <label for="Name"><b>Name :</b> </label> <br>
-                    <input type="text" size="120" id="Name"> <br><br>
-                    <label for="email"><b>Email :</b> </label> <br>
-                    <input type="email" size="120" id="email"> <br><br>
-                    <label for="Message"><b>Message:</b> </label> <br>
-                    <textarea name="com" id="com" cols="110" rows="5"></textarea> <br><br>
-    
-                    <input type="submit" value="send">
-    
-                </form>
+ <form 
+  action="https://formspree.io/f/mjkebdaa" 
+  method="POST"
+>
+  <label for="Name"><b>Name:</b></label><br>
+  <input type="text" id="Name" name="name" size="120" required><br><br>
+
+  <label for="email"><b>Email:</b></label><br>
+  <input type="email" id="email" name="email" size="120" required><br><br>
+
+  <label for="Message"><b>Message:</b></label><br>
+  <textarea id="com" name="message" cols="110" rows="5" required></textarea><br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+
             </div>
     
     
@@ -64,3 +70,4 @@
 
 
 </html>
+
