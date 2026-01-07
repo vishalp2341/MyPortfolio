@@ -3,61 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You | Vishal Prakash</title>
+    <title>Projects | Vishal Prakash</title>
 
     <link rel="stylesheet" href="style1.css">
 
     <style>
-        .thank-container {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f6f8;
-        }
+        /* Project page specific styles */
 
-        .thank-card {
-            background-color: #ffffff;
-            padding: 50px;
-            border-radius: 14px;
+        .projects-header {
             text-align: center;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-            max-width: 500px;
+            margin-bottom: 50px;
         }
 
-        .thank-card h1 {
+        .projects-header p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.05rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.98rem;
             margin-bottom: 15px;
         }
 
-        .thank-card p {
-            margin-bottom: 25px;
-            color: #374151;
+        .tech-stack {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 15px;
         }
 
-        .thank-card a {
-            background-color: #2563eb;
-            color: white;
-            padding: 12px 22px;
-            border-radius: 8px;
+        .project-links a {
+            display: inline-block;
+            margin-right: 12px;
             font-weight: 500;
+            color: #2563eb;
         }
 
-        .thank-card a:hover {
-            background-color: #1e40af;
-            text-decoration: none;
+        .project-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="thank-container">
-        <div class="thank-card">
-            <h1>Thank You!</h1>
-            <p>Your message has been successfully submitted. I’ll get back to you soon.</p>
-            <a href="index.html">Back to Home</a>
-        </div>
+    <!-- Header -->
+    <header class="headerfont">
+        <nav id="nav2">
+            <div style="text-align: center;">
+                <h1>Vishal Prakash</h1>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="videos.html">Videos</a>
+                <a href="certif.html">Certificates</a>
+                <a href="contact.html">Connect</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+
+            <!-- Header -->
+            <section class="projects-header">
+                <h1>My Projects</h1>
+                <p>
+                    Below are some of the academic and internship projects I have worked on, focusing on
+                    web development, UI/UX design, and secure system implementation.
+                </p>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h2>Food Delivery Web Application</h2>
+                    <p class="tech-stack">
+                        <b>Tech Stack:</b> Java, JSP, Servlets, MySQL, HTML, CSS
+                    </p>
+                    <p>
+                        Developed a full-stack food delivery web application with features such as user
+                        authentication, shopping cart management, order processing, and database-backed
+                        order tracking using MySQL.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/posts/vishal-prakash-1830032bb_java-jsp-servlets-activity-7241377227215384577-xv1S" target="_blank">
+                            View Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h2>Asian Odyssey – Travel Blog UI/UX</h2>
+                    <p class="tech-stack">
+                        <b>Tool:</b> Figma
+                    </p>
+                    <p>
+                        Designed a responsive and visually engaging UI/UX prototype for a travel blogging
+                        platform. The project focused on user-centric design, layout consistency, and
+                        improved content readability across devices.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/axNAKzZuslJEEIxOgnBUrN/Asian-Odyssey" target="_blank">
+                            View Prototype
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h2>Morse Code Based Authentication System</h2>
+                    <p class="tech-stack">
+                        <b>Tech Stack:</b> Python, Machine Learning, OpenCV
+                    </p>
+                    <p>
+                        Final year project that implements a secure authentication system using Morse code
+                        patterns combined with machine learning. The system enhances security by converting
+                        traditional credentials into Morse-based input signals.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/vishalp2341/Morse_Code_Based_Authentication_System" target="_blank">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
     </div>
+
+    <!-- Footer -->
+    <footer class="footerfont">
+        <div style="text-align: center;">
+            <h1>Contact Me</h1>
+            <p>Email: vishalp2341@gmail.com</p>
+            <p>Phone: +91 88671 40270</p>
+            <p>&copy; 2024 Vishal Prakash. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
