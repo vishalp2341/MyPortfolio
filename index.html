@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my portfolio</title>
-    <style>
-        body {
-            background-image: url(bgimg.jpg);
-            background-size: cover;
+    <title>Vishal Prakash | Portfolio</title>
 
-        }
-
-        #img1 img {
-            margin-left: 38%;
-            margin-top: 14%;
-            border-radius: 50%;
-
-    box-shadow: 10px 10px 10px purple;
-
-        }
-
-        #content {
-            color: whitesmoke;
-            margin-left: 60%;
-            margin-top: -15%;
-
-        }
-        
-        #icon{
-            margin-left: 59.5%;
-        }
-        
-        #icon a img{
-            padding: 5px;
-        }
-
-    </style>
     <link rel="stylesheet" href="style1.css">
+
+    <style>
+        /* ===== INDEX HERO ONLY ===== */
+
+        .hero {
+            background:
+                radial-gradient(circle at 20% 30%, rgba(56,189,248,0.15), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(168,85,247,0.18), transparent 40%),
+                linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+        }
+
+        .hero-content {
+            max-width: 720px;
+            padding: 40px 20px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 28px;
+            box-shadow:
+                0 0 0 4px rgba(168,85,247,0.3),
+                0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #c7d2fe;
+            margin-bottom: 28px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .social-icons a {
+            width: 44px;
+            height: 44px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-4px);
+            background: rgba(56,189,248,0.2);
+        }
+
+        .social-icons img {
+            width: 22px;
+            height: 22px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <nav id="nav1">
         <div id="frontpage">
-
-            <a href="index.html">Home</a>    
-            <a href="about.html">About</a>    
-            <a href="project.html">Projects</a>    
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="videos.html">Videos</a>
             <a href="certif.html">Certificates</a>
-            <a href="contact.html">Connect with me</a>    
+            <a href="contact.html">Connect</a>
         </div>
     </nav>
 
-    <div id="img1">
-        <img src="me1.jpg" alt="no image found" height="250px" width="250px">
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="me1.jpg" alt="Vishal Prakash" class="profile-pic">
 
-    <div id="content">
-        <h1>Vishal P</h1>
-        <h3>Java Full Stack Web Developer</h3>
-    </div>
+            <h1>Vishal Prakash</h1>
+            <p>Java Full Stack Web Developer</p>
 
-    <div id="icon">
-        <a href="https://www.instagram.com/visshhaal_/"><img src="instagram.png" alt="no image foung" width="50px"
-                height="50px"></a>
-        <a href="https://www.linkedin.com/in/vishal-prakash-1830032bb/"><img src="linkedin.png" alt="no image found"
-                width="50px" height="50px"></a>
-        <a href="https://github.com/vishalp2341"><img src="github.png" alt="no image found" width="50px"
-                height="50px"></a>
-    </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/visshhaal_/" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/vishal-prakash-1830032bb/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/vishalp2341" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </section>
+
 </body>
-
 </html>
