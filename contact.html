@@ -1,79 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect with me</title>
+    <title>Contact | Vishal Prakash</title>
+
     <link rel="stylesheet" href="style1.css">
+
+    <style>
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .contact-form button {
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #1e40af;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="headerfont" >
-        <nav id="nav2">
-            <div style="text-align: center;">
-
-                <h1 >Vishal P</h1>
-                <a href="index.html" >Home</a>
-                <a href="about.html" >About</a>
-                <a href="project.html" >Projects</a>
-                <a href="certif.html" >Certificates</a>
-                <a href="contact.html" >Connect with me</a>
-
-            </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <main style="padding-top: 3%;">
-            <div style="text-align: center;">
-    
-                <h1>Connect with me</h1>
-    
- <form 
-  action="https://formspree.io/f/mjkebdaa" 
-  method="POST"
->
-<label for="Name"><b>Name:</b></label><br>
-<input type="text" id="Name" name="name" required 
-       style="width:600px; height:40px; padding:8px; font-size:16px;"><br><br>
-
-<label for="email"><b>Email:</b></label><br>
-<input type="email" id="email" name="email" required 
-       style="width:600px; height:40px; padding:8px; font-size:16px;"><br><br>
-
-<label for="Message"><b>Message:</b></label><br>
-<textarea id="com" name="message" required 
-          style="width:600px; height:120px; padding:8px; font-size:16px;"></textarea><br><br>
-
-
-  <button type="submit">Send</button>
-</form>
-
-
-            </div>
-    
-    
-    
-        </main>
-
-    </div>
-
-    <footer class="footerfont" style="margin-top: -5%;">
+<header class="headerfont">
+    <nav id="nav2">
         <div style="text-align: center;">
-
-            <h1>Contact Me</h1>
-            <p>Email: vishalp2341@gmail.com</p>
-            <p>Phone: +91 88671 40270</p>
+            <h1>Vishal Prakash</h1>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
             
-
+            <a href="certif.html">Certificates</a>
+            <a href="contact.html">Connect</a>
         </div>
-    </footer>
+    </nav>
+</header>
+
+<div class="container">
+    <main>
+
+        <section class="contact-header">
+            <h1>Connect With Me</h1>
+            <p>
+                Feel free to reach out for collaboration, project discussions,
+                or any professional opportunities.
+            </p>
+        </section>
+
+        <form 
+            class="contact-form"
+            action="https://formspree.io/f/mjkebdaa"
+            method="POST"
+        >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="hidden" name="_redirect" value="thank.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </main>
+</div>
+
+<footer class="footerfont">
+    <div style="text-align: center;">
+        <h1>Contact Me</h1>
+        <p>Email: vishalp2341@gmail.com</p>
+        <p>Phone: +91 88671 40270</p>
+        <p>&copy; 2024 Vishal Prakash. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
-
-
 </html>
-
-
-
