@@ -1,71 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Vishal Prakash</title>
+
     <link rel="stylesheet" href="style1.css">
+
+    <style>
+        /* Project page specific styles */
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .projects-header p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.05rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.98rem;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-bottom: 15px;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 12px;
+            font-weight: 500;
+            color: #2563eb;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="headerfont">
         <nav id="nav2">
             <div style="text-align: center;">
-                <h1 class="headerfont">Vishal P</h1>
+                <h1>Vishal Prakash</h1>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="project.html">Projects</a>
+                <a href="videos.html">Videos</a>
                 <a href="certif.html">Certificates</a>
-                <a href="contact.html">Connect with me</a>
+                <a href="contact.html">Connect</a>
             </div>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <div class="container">
         <main>
-            <div style="text-align: center;">
 
+            <!-- Header -->
+            <section class="projects-header">
                 <h1>My Projects</h1>
+                <p>
+                    Below are some of the academic and internship projects I have worked on, focusing on
+                    web development, UI/UX design, and secure system implementation.
+                </p>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid">
 
                 <!-- Project 1 -->
-                <h2 style="padding-top: 3%;">Food Delivery Web Application Clone | Java, JSP, Servlets, MySQL</h2>
-                <p style="font-size: 20px; width: 60%; margin-left: 20%;">
-                    • <b>Project Development:</b> Designed and implemented using Java, JSP, Servlets, HTML, CSS, and JDBC. <br>
-                    • <b>Order Management:</b> Implemented order storage and retrieval with MySQL for efficient tracking. <br>
-                    • <b>Shopping Cart Functionality:</b> Built an interactive cart allowing add, update, and delete operations. <br>
-                    • <b>User Experience:</b> Applied responsive design principles with external CSS for consistent styling. <br>
-                    • <b>Session Management:</b> Maintained user-specific data flow across sessions.
-                </p>
+                <div class="project-card">
+                    <h2>Food Delivery Web Application</h2>
+                    <p class="tech-stack">
+                        <b>Tech Stack:</b> Java, JSP, Servlets, MySQL, HTML, CSS
+                    </p>
+                    <p>
+                        Developed a full-stack food delivery web application with features such as user
+                        authentication, shopping cart management, order processing, and database-backed
+                        order tracking using MySQL.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/posts/vishal-prakash-1830032bb_java-jsp-servlets-activity-7241377227215384577-xv1S" target="_blank">
+                            View Demo
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Project 2 -->
-                <h2 style="padding-top: 3%;">Asian Odyssey – A Dynamic Blogging Website | Figma</h2>
-                <p style="font-size: 20px; width: 60%; margin-left: 20%;">
-                    • <b>Internship Project at Varcons Technologies:</b> Designed a responsive layout for "Asian Odyssey," optimizing it for desktop, tablet, and smartphone. <br>
-                    • <b>Skills Developed:</b> Learned wireframing, prototyping, and front-end design. <br>
-                    • <b>Design Process Understanding:</b> Gained hands-on experience of the end-to-end design process. <br>
-                    • <b>User-Centric Mindset:</b> Cultivated a user-focused approach through practical project work.
-                </p>
+                <div class="project-card">
+                    <h2>Asian Odyssey – Travel Blog UI/UX</h2>
+                    <p class="tech-stack">
+                        <b>Tool:</b> Figma
+                    </p>
+                    <p>
+                        Designed a responsive and visually engaging UI/UX prototype for a travel blogging
+                        platform. The project focused on user-centric design, layout consistency, and
+                        improved content readability across devices.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/axNAKzZuslJEEIxOgnBUrN/Asian-Odyssey" target="_blank">
+                            View Prototype
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Project 3 -->
-                <h2 style="padding-top: 3%;">Morse Code Based Authentication System | Python</h2>
-                <p style="font-size: 20px; width: 60%; margin-left: 20%;">
-                    • <b>Project Development:</b> Final year project – built a Morse Code based Authentication System. <br>
-                    • <b>Security Enhancement:</b> Enhanced security by integrating facial recognition with Morse code input via eye blinks. <br>
-                    • <b>Multi-Factor Authentication:</b> Combined passwords, biometric verification, and Morse code for robust security. <br>
-                    • <b>Innovation in Usability:</b> Improved usability and security through innovative authentication methods.
-                </p>
+                <div class="project-card">
+                    <h2>Morse Code Based Authentication System</h2>
+                    <p class="tech-stack">
+                        <b>Tech Stack:</b> Python, Machine Learning, OpenCV
+                    </p>
+                    <p>
+                        Final year project that implements a secure authentication system using Morse code
+                        patterns combined with machine learning. The system enhances security by converting
+                        traditional credentials into Morse-based input signals.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/vishalp2341/Morse_Code_Based_Authentication_System" target="_blank">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
 
-            </div>
+            </section>
+
         </main>
     </div>
 
-    <footer class="footerfont" style="margin-top: -7%;">
+    <!-- Footer -->
+    <footer class="footerfont">
         <div style="text-align: center;">
             <h1>Contact Me</h1>
             <p>Email: vishalp2341@gmail.com</p>
             <p>Phone: +91 88671 40270</p>
+            <p>&copy; 2024 Vishal Prakash. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
