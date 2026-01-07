@@ -3,102 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
+    <title>Certificates | Vishal Prakash</title>
+
     <link rel="stylesheet" href="style1.css">
 
     <style>
-         table {
-            width: 80%;
-            border-collapse: collapse;
-        }
+        /* Certificate page specific styles */
 
-        th,
-        td {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: left;
-        }
+        /* Certificate page specific styles */
 
-        th {
-            background-color: #f2f2f2;
-        }
+.cert-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cert-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.cert-table th,
+.cert-table td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    text-align: left;
+}
+
+.cert-table th {
+    background-color: #111827;
+    color: #c7d2fe;
+    font-weight: 600;
+}
+
+.cert-table td {
+    color: #e5e7eb;
+}
+
+.cert-table a {
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+.cert-table a:hover {
+    text-decoration: underline;
+}
 
     </style>
 </head>
+
 <body>
-    <header class="headerfont" >
+
+    <!-- Header -->
+    <header class="headerfont">
         <nav id="nav2">
             <div style="text-align: center;">
-
-                <h1 >Vishal P</h1>
-                <a href="index.html" >Home</a>
-                <a href="about.html" >About</a>
-                <a href="project.html" >Projects</a>
-                <a href="certif.html" >Certificates</a>
-                <a href="contact.html" >Connect with me</a>
-
+                <h1>Vishal Prakash</h1>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="videos.html">Videos</a>
+                <a href="certif.html">Certificates</a>
+                <a href="contact.html">Connect</a>
             </div>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <div class="container">
-        <main style="padding-top: 3%;">
+        <main>
 
-            <center>
-                <h1>Certificates issued to me :</h1>
-                <div style="padding-top: 2%;">
-            <table >
-                <tr>
-                    <th style="text-align: center;">Certificates</th>
-                    <th style="text-align: center;">View</th>
-                </tr>
+            <section class="cert-header">
+                <h1>Certificates</h1>
+                <p>
+                    Below are some of the certifications and training programs I have completed
+                    as part of my academic and professional development.
+                </p>
+            </section>
 
-                <tr>
-                    <td> IELTS Academic Certificate – Overall Band 7.5</td>
-                    <td><a href="ielts.jpg">click here</a></td>
-                </tr>
+            <table class="cert-table">
+    <tr>
+        <th>Certificate</th>
+        <th class="view-head">
+            Click below to view <span class="arrow">↓</span>
+        </th>
+    </tr>
+
+  
+
+    <tr>
+        <td>Course Completion Certificate – Full Stack Web Development (TAP Academy)</td>
+        <td><a href="tap.jpg" target="_blank">View</a></td>
+    </tr>
+
+    <tr>
+        <td>Internship Completion Certificate – UI/UX Design (Varcons Technologies)</td>
+        <td><a href="intern.jpg" target="_blank">View</a></td>
+    </tr>
+
+      <tr>
+        <td>IELTS Academic Certificate – Overall Band 7.5</td>
+        <td><a href="ielts.jpg" target="_blank">View</a></td>
+    </tr>
+
+    <tr>
+        <td>
+            HTML Training – Spoken Tutorial Project, IIT Bombay
+            (Organized at East West College of Engineering)
+        </td>
+        <td><a href="certif1.jpg" target="_blank">View</a></td>
+    </tr>
+
+    <tr>
+        <td>
+            PHP & MySQL Training – Spoken Tutorial Project, IIT Bombay
+            (Organized at East West College of Engineering)
+        </td>
+        <td><a href="certif2.jpg" target="_blank">View</a></td>
+    </tr>
+</table>
 
 
-             <tr>
-                    <td> Course Completion certificate on Full Stack Web Development at TAP Academy.</td>
-                    <td><a href="tap.jpg">click here</a></td>
-                </tr>
-    
-                <tr>
-                    <td>Internship Completion Certificate at Varcons Technology on UI/UX Design</td>
-                    <td><a href="intern.jpg">click here</a></td>
-                </tr>
-    
-                <tr>
-                    <td>HTML training organized at East West College of Engineering, with course material provided 
-                        by the Spoken Tutorial Project, IIT Bombay.</td>
-                    <td><a href="certif1.jpg">click here</a></td>
-                </tr>
-                <tr>
-                    <td>PHP and MySQL training organized at East West College of Engineering, with course material provided 
-                        by the Spoken Tutorial Project, IIT Bombay.</td>
-                    <td><a href="certif2.jpg">click here</a></td>
-                </tr>
-    
-            </table>
-        </div>
-        </center>
         </main>
-
     </div>
 
-        <footer class="footerfont" style="margin-top: -5%;">
-            <div style="text-align: center;">
-    
-                <h1 >Contact Me</h1>
-                <p >Email: vishalp2341@gmail.com</p>
-                <p >Phone: +91 88671 40270</p>
-                <p >&copy; 2024 Google Ltd. All rights reserved </p>
-    
-            </div>
-        </footer>
-    
+    <!-- Footer -->
+    <footer class="footerfont">
+        <div style="text-align: center;">
+            <h1>Contact Me</h1>
+            <p>Email: vishalp2341@gmail.com</p>
+            <p>Phone: +91 88671 40270</p>
+            <p>&copy; 2024 Vishal Prakash. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
-
 </html>
-
