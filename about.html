@@ -1,167 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About | Vishal Prakash</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="style1.css">
 
-    <style>
-        table {
-            width: 80%;
-            border-collapse: collapse;
-        }
+        <style>
+            /* About page specific styles */
 
-        th,
-        td {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: left;
-        }
+            .about-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
 
-        th {
-            background-color: #f2f2f2;
-        }
+            .about-header p {
+                max-width: 800px;
+                margin: auto;
+                font-size: 1.05rem;
+            }
 
+            .education-section {
+                margin-top: 50px;
+            }
 
-        li {
-            padding: 0.5%;
-        }
+            .skills-wrapper {
+                display: flex;
+                gap: 60px;
+                margin-top: 60px;
+                flex-wrap: wrap;
+            }
 
-        .skills ul li {
-            padding: 1%;
-        }
-       
-    
-    </style>
-</head>
+            .skills-box {
+                flex: 1;
+                min-width: 260px;
+            }
 
-<body>
- 
-    <header class="headerfont" >
-        <nav id="nav2">
+            .skills-box h2 {
+                margin-bottom: 15px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 25px;
+            }
+
+            th, td {
+                padding: 14px;
+                border: 1px solid #e5e7eb;
+            }
+
+            th {
+                background-color: #111827;
+                color: #c7d2fe;
+                font-weight: 600;
+            }
+
+            @media (max-width: 768px) {
+                .skills-wrapper {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header class="headerfont">
+            <nav id="nav2">
+                <div style="text-align: center;">
+                    <h1>Vishal Prakash</h1>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="project.html">Projects</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="certif.html">Certificates</a>
+                    <a href="contact.html">Connect</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div class="container">
+            <main>
+
+                <!-- About Intro -->
+                <section class="about-header">
+                    <h1>About Me</h1>
+                    <p>
+                        I am Vishal, a passionate full-stack web developer with strong interest in both front-end and back-end
+                        development. I enjoy building secure, scalable, and user-friendly web applications, and I continuously
+                        strive to improve my technical and problem-solving skills.
+                    </p>
+                </section>
+
+                <!-- Education -->
+                <section class="education-section">
+                    <h2>Education</h2>
+
+                    <table>
+                        <tr>
+                            <th>Qualification</th>
+                            <th>Institution</th>
+                            <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>Bachelor of Engineering (CSE)</td>
+                            <td>East West College of Engineering</td>
+                            <td>CGPA – 7.07</td>
+                        </tr>
+                        <tr>
+                            <td>Class 12 – Karnataka PU Board</td>
+                            <td>Sri Vidya Mandir Ind PU College</td>
+                            <td>86.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Class 10 – Karnataka SSLC</td>
+                            <td>Sri Vidya Mandir Education Society</td>
+                            <td>95.52%</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Skills -->
+                <section class="skills-wrapper">
+
+                    <div class="skills-box">
+                        <h2>Coursework / Technical Skills</h2>
+                        <ul>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Database Management System (DBMS)</li>
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>Operating Systems</li>
+                            <li>Java (JSE & JEE)</li>
+                            <li>Artificial Intelligence & Machine Learning</li>
+                            <li>UI / UX Design</li>
+                            <li>Android Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-box">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Analytical Thinking</li>
+                            <li>Communication Skills</li>
+                            <li>Teamwork & Collaboration</li>
+                            <li>Leadership</li>
+                            <li>Adaptability</li>
+                            <li>Continuous Learning</li>
+                            <li>Attention to Detail</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footerfont">
             <div style="text-align: center;">
-
-                <h1 >Vishal P</h1>
-                <a href="index.html" >Home</a>
-                <a href="about.html" >About</a>
-                <a href="project.html" >Projects</a>
-                <a href="certif.html" >Certificates</a>
-                <a href="contact.html" >Connect with me</a>
-
+                <h1>Contact Me</h1>
+                <p>Email: vishalp2341@gmail.com</p>
+                <p>Phone: +91 88671 40270</p>
+                <p>&copy; 2024 Vishal Prakash. All rights reserved.</p>
             </div>
-        </nav>
-    </header>
+        </footer>
 
-    <div class="container">
-    <main>
-        <div style="text-align: center;">
-
-            <h1>About me</h1>
-           <p style="font-size: 18px;">
-
-    Computer Science Engineering graduate with strong knowledge in Java full-stack development, 
-
-    UI/UX design, and machine learning. <br>
-
-    Skilled at building academic projects and prototypes that focus on security, usability, 
-
-    and innovative solutions. <br>
-
-    Explore my projects to know more about my work.
-
-
-
-</p>
-
-
-
-        </div>
-
-        <center>
-            <div>
-                <h2 style="padding-top: 3%;">Education Details</h2>
-
-                <table style="text-align: center;">
-                    <tr>
-                        <th>Qualification</th>
-                        <th>School/College</th>
-                        <th>Marks</th>
-                    </tr>
-                    <tr>
-                        <td>Bachelors of Engineering (BE) in Computer Science and Engineering </td>
-                        <td>East West College of Engineering</td>
-                        <td>CGPA – 7.07</td>
-                    </tr>
-                    <tr>
-                        <td>Class 12th Boards, Karnataka PU Board </td>
-                        <td>Sri Vidya Mandir Ind PU college </td>
-                        <td>Percentage – 86.6% </td>
-                    </tr>
-                    <tr>
-                        <td> Class 10th Boards, Karnataka SSLC </td>
-                        <td> Sri Vidya Mandir Education Society </td>
-                        <td> Percentage - 95.52% </td>
-                    </tr>
-                </table>
-            </div>
-        </center>
-    </main>
-
-    <aside style="margin-top: -10%;">
-    <div style="padding-top: 3%; margin-left: 20%;">
-        <h2>Course Work / Skills:</h2>
-
-        <p>
-        <ul>
-            <li> Data Structures & Algorithms</li>
-            <li>Database Management System (DBMS)</li>
-            <li> UI & UX Design</li>
-            <li> Android Development</li>
-            <li>Computer Graphics(OpenGL)</li>
-            <li>Artificial Intelligence and Machine Learning</li>
-            <li> Java (JSE and JEE) </li>
-            <li> OOPS Concept</li>
-        </ul>
-        </p>
-    </div>
-</aside>
-
-<aside class="skills">
-    <div style="margin-left: 60%; margin-top: -24%;">
-        <h2>Soft Skills:</h2>
-        <p id   >
-        <ul>
-            <li>Leadership </li>
-            <li> Problem-Solving</li>
-            <li>Continuous Learning</li>
-            <li>Attention to Detail</li>
-            <li>Communication Skills </li>
-            <li>Adaptability</li>
-            <li>Analytical Thinking </li>
-            <li>Teamwork and Collaboration</li>
-        </ul>
-        </p>
-    </div>
-    
-</aside>
-</div>
-
-    <footer class="footerfont" style="margin-top: -1.5%;">
-        <div style="text-align: center;">
-
-            <h1 >Contact Me</h1>
-            <p >Email: vishalp2341@gmail.com</p>
-            <p >Phone: +91 88671 40270</p>
-            
-
-        </div>
-    </footer>
-
-</body>
-
-
-</html>
-
-
+    </body>
+    </html>
